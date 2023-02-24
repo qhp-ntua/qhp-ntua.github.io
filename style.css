@@ -1,0 +1,85 @@
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #444;
+    padding: 0 10px;
+    font-family: 'Fira Code', monospace
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2
+}
+
+blockquote {
+    border-left: #44444488 4px solid;
+    background-color: #eee;
+    padding-left: 10px;
+}
+
+#topbar {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: #444 1px solid;
+    border-bottom: #444 1px solid;
+    overflow: hidden;
+}
+#topbar a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+}
+
+#topbar a:hover {
+    background-color: #444;
+    color: #fff;
+    transition: all 0.25s ease;
+}
+
+
+#header #menuIcon {
+    display: none;
+    color: #444;
+    text-align: center;
+}
+
+#topbar a.active {
+    background-color: #444;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    
+    #topbar {
+        display: inherit;
+        overflow: hidden;
+        max-height: 0px;
+        border-top: 0.5px #444 solid;
+        border-bottom: 0.5px #444 solid;
+        transition: all 0.5s ease;
+    }
+    #topbar a {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 5px 0;;
+    }
+    #header #menuIcon {
+        display: block;
+        float: right;
+        padding: 5px 5px 0px 5px;
+    }
+    #topbar.responsive {
+        display: inherit;
+        max-height: 500px;
+        transition: all 0.5s ease;
+    }
+}
