@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="el">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d43744d090.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <title>qhp@NTUA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function menuToggle() {
+            var nav = document.getElementById("topbar");
+            if(nav.className === "responsive") {
+                nav.className = "";
+            } else {
+                nav.className = "responsive"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <a href="/"><img id="logo" src="imgs/logo.png" alt="qhp logo" width="112px" height="50px"></a>
+    <a href="javascript:void(0);" id="menuIcon" onclick="menuToggle()">
+    <i class="fa-solid fa-bars" style="font-size: 2em"></i></a>
+    <div id="topbar">
+        <a href="index.html">home</a>
+        <a class="active" href="join.html">join us</a>
+        <a href="support.html">support</a>
+        <a href="projects.html">projects</a>  
+    </div>
+    </div>
+    <h1>Γίνε μέλος του qhp!</h1>
+    <p>Τα μέλη μας είναι κουλ. Γίνε και συ κουλ, συμπληρώνοντας την παρακάτω φόρμα:</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7TBkMVRijd7IaM3TaEB360vCsJvPBWweUozlgcyc-MWR7GQ/viewform?embedded=true" width="650" height="1100" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <hr>
+    <span class="fa-brands fa-creative-commons"></span> 2023 qhp@ntua ∙ content provided under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a> 
+</body>
+
+</html>

@@ -10,8 +10,15 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     line-height: 1.2
+}
+
+a {
+    color: #444;
+    font-weight: bold;
 }
 
 blockquote {
@@ -42,7 +49,7 @@ blockquote {
 }
 
 
-#header #menuIcon {
+#menuIcon {
     display: none;
     color: #444;
     text-align: center;
@@ -53,6 +60,12 @@ blockquote {
     color: #fff;
 }
 
+#incomplete {
+    border: #444 1px solid;
+    border-left: #444 4px solid;
+    padding: 5px;
+    padding-left: 10px;
+}
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
@@ -72,7 +85,7 @@ blockquote {
         text-align: center;
         padding: 5px 0;;
     }
-    #header #menuIcon {
+    #menuIcon {
         display: block;
         float: right;
         padding: 5px 5px 0px 5px;
